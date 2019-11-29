@@ -1,0 +1,70 @@
+
+@import "bootstrap";
+.navbar{
+    background: #1b1b1b !important;
+    color: #FAF6F5 !important;
+}
+
+a{
+    color: #FAF6F5 !important;
+}
+
+td{
+  color: #FAF6F5;
+}
+
+tr{
+  color: #FAF6F5;
+}
+
+label{
+  color: #FAF6F5 !important;
+}
+
+.btn{
+  background-color: #1b1b1b;
+  border: 2px solid white;
+}
+
+input:focus{
+  outline: none !important;
+  border: 2px solid white;
+}
+
+input:active{
+  border: 2px solid white;
+}
+
+.btn:hover{
+  background-color:  #121212;
+  border: 2px solid white;
+}
+
+.btn:active:after{
+  background-color:  #121212;
+  border: 2px solid white;
+}
+
+-navbar-brand{
+
+}
+
+.jumbotron{
+    background: #121212  ;
+}
+
+body{
+    padding: 0;
+    background: #121212;
+    color: #FAF6F5 ;
+}
+
+
+footer {
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    background: #1b1b1b  ;
+}
