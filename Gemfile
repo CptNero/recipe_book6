@@ -30,6 +30,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap'
 gem 'cancancan'
+gem 'rails-i18n'
 
 
 # Reduces boot times through caching; required in config/boot.rb

@@ -1,6 +1,7 @@
+<h1 class="h3 mb-3 font-weight-normal"><%=t('sign_in')%></h1>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name),:html => {:class => 'form-signin'}) do |f| %>
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
 
   <%= f.label :email%><br />
   <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control', :id => "inputEmail" %>
@@ -14,7 +15,7 @@
     <%= f.label :remember_me %>
 
   <% end %>
-  <%= f.submit "Log in",:class => 'btn btn-lg btn-primary btn-block'%>
+  <%= f.submit t('log_in'),:class => 'btn btn-lg btn-primary btn-block'%>
 <% end %>
 
 <%= render "users/shared/links" %>

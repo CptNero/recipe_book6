@@ -30,6 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  #Welcome page
   welcome: "Welcome to Recipenomicon"
   new_here: "New here? Sign up!"
   if_not: "If not, please sign in!"
+  copyright: "© 2019 Copyright:"
+
+  #Login page
+  sign_in: "Please sign in"
+

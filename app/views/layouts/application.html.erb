@@ -48,8 +48,18 @@
     <!-- Footer -->
     <footer class="page-footer font-small blue">
 
+
+      <%= link_to locale: :hu do %>
+        <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Hungary_%281896-1915%29.svg/800px-Flag_of_Hungary_%281896-1915%29.svg.png", height: 25, width: 25, align: 'left'%>
+      <% end unless current_page?(locale: :hu) %>
+
+      <%= link_to locale: :en do %>
+        <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg", height: 25, width: 25, align: 'left'%>
+      <% end unless current_page?(locale: :en) %>
+
+
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <div class="footer-copyright text-center py-3"> <%= t('copyright')%>
         <a href="https://mdbootstrap.com/education/bootstrap/"> Neresis</a>
       </div>
       <!-- Copyright -->

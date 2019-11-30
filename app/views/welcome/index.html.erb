@@ -3,10 +3,10 @@
     <%controller.redirect_to recipes_path %>
   <%end%>
   <h1><%=t('welcome') %></h1>
-  <a href="users/sign_up"><%=t('new_here')%></a>
+
+
+  <a href="/users/sign_up"><%=t('new_here')%></a>
   <br>
   <a href="/users/sign_in"><%= t('if_not') %></a>
-  <%= link_to 'Switch to Hungarian', locale: :hu%>
-  <%= link_to 'Switch to English', locale: :en%>
 </div>
 

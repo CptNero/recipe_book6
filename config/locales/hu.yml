@@ -1,3 +1,20 @@
 hu:
-  welcome: "Üdv"
-  new_here: "Új?"
+  #Welcome page
+  welcome: "Üdv a Recipenomicon oldalán"
+  new_here: "Új felhasználó? Regisztrálj!"
+  if_not: "Ha már regisztráltál, jelentkezz be itt!"
+  copyright: "© 2019 Minden jog fenntartva:"
+
+  #Login page
+  sign_in: "Jelentkezz be"
+  log_in: "Bejelentkezés"
+  activerecord:
+    models:
+      comment: "Komment"
+      recipe: "Recept"
+      recipes_tag: "Recept Címke"
+      tag: "Címke"
+      user: "Felhasználó"
+    attributes:
+      password: "Jelszó"
+

@@ -2,8 +2,20 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
-  def set_locale(&action)
-    I18n.locale = params[:locale] || I18n.default_locale
+  private
+
+  def set_locale
+    I18n.locale = extract_locale || I18n.default_locale
+
+  end
+
+  def extract_locale
+    parsed_locale = params[:locale]
+    I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale : nil
+  end
+
+  def default_url_options
+    { locale: I18n.locale }
   end
 
 # Get locale from top-level domain or return +nil+ if such locale is not available
@@ -12,8 +24,4 @@ class ApplicationController < ActionController::Base
 #   127.0.0.1 application.it
 #   127.0.0.1 application.pl
 # in your /etc/hosts file to try this out locally
-  def extract_locale_from_tld
-    parsed_locale = request.host.split('.').last
-    I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale : nil
-  end
 end
