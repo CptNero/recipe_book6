@@ -1,21 +1,23 @@
 
+<% unless comment.commenter.nil?%>
 <div class="commentBox">
-  <p class="taskDescription"> <%= comment.commenter %></p>
+      <p class="taskDescription"> <%=   comment.commenter   %></p>
 </div>
 <div class="actionBox">
   <ul class="commentList">
     <li>
-      <div class="commenterImage">
-        <img src="http://placekitten.com/50/50" />
+      <div class="commenterImage" >
+        <img src="https://2.bp.blogspot.com/-PkHO2Cf4LJ4/WAv8o4XacXI/AAAAAAADqg0/JuWLuOzmIeEWFZ_GNtdOLVT8C2dU84mmACLcB/s1600/TW326264.png" height="5%" width="5%"/>
       </div>
       <div class="commentText">
-        <p class=""><%= comment.body %></p>
+        <pre><code><%=   comment.body   %></p></code></pre>
       </div>
     </li>
   </ul>
 </div>
 <p>
-  <%= link_to 'Destroy Comment', [comment.recipe, comment],
+  <%=   link_to 'Destroy Comment', [comment.recipe, comment],
               method: :delete,
-              data: { confirm: 'Are you sure?' } %>
+              data: { confirm: 'Are you sure?' }   %>
 </p>
+<% end %>
