@@ -7,15 +7,14 @@
 
 pre{
   color: #FAF6F5;
-
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  overflow:auto
 }
 
 img{
   border-radius: 20px;
-}
-
-code{
-  overflow-wrap: break-word;
 }
 
 a{

@@ -16,7 +16,7 @@
   </ul>
 </div>
 <p>
-  <%if can? :destroy, comment %> <%=   link_to 'Destroy Comment', [comment.recipe, comment],
+  <%if can? :destroy, comment %> <%=   link_to t('link_text.comment.destroy'), [comment.recipe, comment],
               method: :delete,
               data: { confirm: 'Are you sure?' }   %> <% end %>
 </p>

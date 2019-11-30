@@ -1,4 +1,7 @@
 hu:
+  #application layout
+  sign_out: 'Kijelentkezés'
+
   #Welcome page
   welcome: "Üdv a Recipenomicon oldalán"
   new_here: "Új felhasználó? Regisztrálj!"
@@ -8,13 +11,39 @@ hu:
   #Login page
   sign_in: "Jelentkezz be"
   log_in: "Bejelentkezés"
-  activerecord:
-    models:
-      comment: "Komment"
-      recipe: "Recept"
-      recipes_tag: "Recept Címke"
-      tag: "Címke"
-      user: "Felhasználó"
-    attributes:
-      password: "Jelszó"
+  email: 'Email'
+  password: 'Jelszó'
+  remember_me: 'Emlékezz rám'
+  sign_up: 'Regisztráció'
+  forgot_your_password: 'Elfelejtette a jelszavát?'
+
+  #Reg page
+  password_min: 'Jelszó (Legalább 6 karakter)'
+  password_conf: 'Jelszó ellenőrzés'
+  send_reset_instructions: 'Küld el a visszallítási utasításokat'
+
+  #Recipe index
+  list_of_recipes: 'Receptek listája'
+  title: 'Cím'
+  tags: 'Címkék'
+
+  #Show recipe page
+  add_comment: 'Komment hozzáadása'
+  comments: 'Kommentek'
+  display_name: 'Megjelenő név'
+  send_comment: 'Komment küldése'
+
+  #Edit recipe page
+  edit_recipe: 'Recept szerkesztése'
+  name: 'Név'
+  recipe: 'Recept'
+
+  link_text:
+    show: 'Megjelenítés'
+    back: 'Vissza'
+    edit: 'Szerkesztés'
+    destroy: 'Törlés'
+    new: 'Új'
+    comment:
+      destroy: 'Komment törlése'
 

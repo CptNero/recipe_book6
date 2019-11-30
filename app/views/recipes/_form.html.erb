@@ -15,16 +15,16 @@
   <% end %>
 
   <p>
-    <%= form.label :title, value:'Name' %><br>
+    <%= form.label :title, value:t('name') %><br>
     <%= form.text_field :title, class: 'form-control', id: 'exampleFormControlInput1' %>
   </p>
 
   <p>
-    <%= form.label :description, value: 'Recipe' %><br>
+    <%= form.label :description, value: t('recipe') %><br>
     <%= form.text_area :description, class: 'form-control', id:'exampleFormControlTextarea1' %>
   </p>
 
-  <%= form.label :all_tags, value:'Tags' %> <br>
+  <%= form.label :all_tags, value:t('tags') %> <br>
   <%= form.text_field :all_tags, class:'form-control', id:'exampleFormControlInput1' %>
 
   <p>

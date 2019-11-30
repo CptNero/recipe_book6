@@ -30,6 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  #application layout
+  sign_out: 'Sign out'
+
   #Welcome page
   welcome: "Welcome to Recipenomicon"
   new_here: "New here? Sign up!"
@@ -38,4 +41,39 @@ en:
 
   #Login page
   sign_in: "Please sign in"
+  email: 'Email'
+  password: 'Password'
+  remember_me: 'Remember me'
+  sign_up: 'Sign up'
+  forgot_your_password: 'Forgot your password?'
+
+  #Reg page
+  password_min: 'Password (6 characters minimum)'
+  password_conf: 'Password confirmation'
+  send_reset_instructions: 'Send me the reset instructions'
+
+  #Recipe index
+  list_of_recipes: 'List of Recipes'
+  title: 'Title'
+  tags: 'Tags'
+
+  #Show recipe page
+  add_comment: 'Add a comment'
+  comments: 'Comments'
+  display_name: 'Display name'
+  send_comment: 'Sencd comment'
+
+  #Edit recipe page
+  edit_recipe: 'Edit recipe'
+  name: 'Name'
+  recipe: 'Recipe'
+
+  link_text:
+    show: 'Show'
+    back: 'Back'
+    edit: 'Edit'
+    destroy: 'Delete'
+    new: 'New'
+    comment:
+      destroy: 'Delete comment'
 

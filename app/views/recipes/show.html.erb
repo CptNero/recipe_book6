@@ -3,18 +3,18 @@
   <h1><%= @recipe.title %></h1>
 
 
-  <pre class="pre-scrollable">
-  <code><%=@recipe.description %></code>
+  <pre class="">
+  <%=@recipe.description %>
   </pre>
 
 
-<h3>Add a comment:</h3>
+<h3><%=t('add_comment') %></h3>
 <%= render 'comments/form' %>
 
-<h2>Comments</h2>
+<h2><%=t('comments') %></h2>
 <%= render @recipe.comments %>
 
 
 
-<%if can? :update, @recipe %><%= link_to 'Edit', edit_recipe_path(@recipe) %> |<%end %>
-<%= link_to 'Back', recipes_path %>
+<%if can? :update, @recipe %><%= link_to t('link_text.edit'), edit_recipe_path(@recipe) %> |<%end %>
+<%= link_to t('link_text.back'), recipes_path %>

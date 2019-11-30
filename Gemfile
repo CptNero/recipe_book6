@@ -31,6 +31,7 @@ gem 'jquery-rails'
 gem 'bootstrap'
 gem 'cancancan'
 gem 'rails-i18n'
+gem 'table_flipper'
 
 
 # Reduces boot times through caching; required in config/boot.rb

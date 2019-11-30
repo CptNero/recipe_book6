@@ -1,21 +1,21 @@
-<h1>List of Recipes</h1>
+<h1><%=t('list_of_recipes') %></h1>
 
-<p><%= link_to 'New', new_recipe_path%></p>
+<p><%= link_to t('link_text.new'), new_recipe_path%></p>
 
 
 <table class="table">
   <tr>
-    <th>Title</th>
-    <th>Tags</th>
+    <th><%= t('title') %></th>
+    <th><%= t('tags') %></th>
   </tr>
 
   <% @recipes.each do |recipe| %>
     <tr>
       <td><%= recipe.title %></td>
       <td><%= recipe.all_tags %></td>
-      <td><%= link_to 'Show', recipe_path(recipe) %></td>
-      <td><%if can? :manage, recipe %><%= link_to 'Edit', edit_recipe_path(recipe)%> <% end %> </td>
-      <td><%if can? :manage, recipe %><%= link_to 'Destroy', recipe_path(recipe),
+      <td><%= link_to t('link_text.show'), recipe_path(recipe) %></td>
+      <td><%if can? :manage, recipe %><%= link_to t('link_text.edit'), edit_recipe_path(recipe)%> <% end %> </td>
+      <td><%if can? :manage, recipe %><%= link_to t('link_text.destroy'), recipe_path(recipe),
                       method: :delete,
                       data: { confirm: 'Are you sure?' } %></td><% end %>
 
