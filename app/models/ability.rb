@@ -8,6 +8,7 @@ class Ability
 
       if user.present?
         can :manage, Recipe, user_id: user.id
+        can :show, Recipe
 
 
       end
