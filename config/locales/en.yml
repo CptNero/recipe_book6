@@ -41,6 +41,7 @@ en:
 
   #Login page
   sign_in: "Please sign in"
+  log_in: "Log in"
   email: 'Email'
   password: 'Password'
   remember_me: 'Remember me'
@@ -61,7 +62,7 @@ en:
   add_comment: 'Add a comment'
   comments: 'Comments'
   display_name: 'Display name'
-  send_comment: 'Sencd comment'
+  send_comment: 'Send comment'
 
   #Edit recipe page
   edit_recipe: 'Edit recipe'
