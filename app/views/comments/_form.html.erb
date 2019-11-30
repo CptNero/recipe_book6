@@ -10,6 +10,7 @@
           <label>Display Name</label> <br>
           <%= form.text_field :commenter, class:'form-control-sm w-25', id:'inputPassword2' %> <br>
           <%= form.text_area :body,  class:'form-control, w-50', id:'exampleFormControlInput1'%>
+          <%= form.hidden_field :user_id, value:"#{current_user.id}"%>
           <%= form.submit class: 'btn btn-sm btn-primary btn-block w-25' %>
         </div>
 
