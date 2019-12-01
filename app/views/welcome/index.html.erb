@@ -4,9 +4,7 @@
   <%end%>
   <h1><%=t('welcome') %></h1>
 
-
-  <a href="/users/sign_up"><%=t('new_here')%></a>
-  <br>
-  <a href="/users/sign_in"><%= t('if_not') %></a>
+  <%= link_to t('new_here'), new_user_registration_url %>
+  <%= link_to t('if_not'), new_user_session_url %>
 </div>
 

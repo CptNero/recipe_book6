@@ -33,7 +33,7 @@
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
         <%if user_signed_in? %>
-        <a href="../users/sign_out"><%= t('sign_out') %></a>
+          <%= link_to t('sign_out'),  destroy_user_session_url %>
         <% end %>
       </div>
     </nav>

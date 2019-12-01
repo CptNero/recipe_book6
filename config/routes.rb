@@ -11,10 +11,9 @@ Rails.application.routes.draw do
     root 'welcome#index'
     get '/:locale' => 'dashboard#index'
 
-    scope "(:locale)", locale: /en|hu/ do
     devise_for :users, controllers: {
         sessions: 'users/sessions'
     }
-      end
+
   end
 end
